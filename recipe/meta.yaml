@@ -26,8 +26,14 @@ requirements:
     - npctypes
 
 test:
+  source_files:
+    - tests
+
   imports:
     - mplview
+
+  commands:
+    - python -m unittest discover -s .
 
 about:
   home: https://github.com/jakirkham/mplview
