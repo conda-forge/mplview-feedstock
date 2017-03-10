@@ -1,15 +1,12 @@
-{% set name = "mplview" %}
-{% set version = "0.0.1" %}
-{% set sha256 = "06a6cbe922f2a0d95938dcb2937b0b8fbdabd0c81b2f2ee58ee70fc616776e3b" %}
+{% set data = load_setuptools() %}
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: mplview
+  version: {{ data.get('version') }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  git_url: https://github.com/jakirkham/mplview.git
+  git_rev: 46812ecf3a480eab3b3ec365c18d64b8d7fdc02b
 
 build:
   number: 0
