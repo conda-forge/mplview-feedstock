@@ -1,6 +1,6 @@
 {% set name = "mplview" %}
-{% set version = "0.0.2" %}
-{% set sha256 = "03304db8fbdd70da1bcef91d3835fa1796a6cd61d9c03a3be578bdf0634b1ed7" %}
+{% set version = "0.0.3" %}
+{% set sha256 = "6ac76c1b88d207dd46e5168cdc3d5fd713000ac443d8de9caaba9f98f36ecef4" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -23,6 +23,7 @@ requirements:
 
   run:
     - python
+    - numpy
     - matplotlib
     - npctypes
 
