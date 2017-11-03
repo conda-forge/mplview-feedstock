@@ -14,9 +14,7 @@ Summary: A simple, embeddable Matplotlib-based image viewer.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mplview-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mplview-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mplview-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mplview-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mplview-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mplview-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/mplview-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mplview-feedstock)
 
 Current release info
 ====================
