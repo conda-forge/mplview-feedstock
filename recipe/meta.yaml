@@ -1,6 +1,6 @@
 {% set name = "mplview" %}
-{% set version = "0.0.3" %}
-{% set sha256 = "6ac76c1b88d207dd46e5168cdc3d5fd713000ac443d8de9caaba9f98f36ecef4" %}
+{% set version = "0.0.4" %}
+{% set sha256 = "e678c7a8a6cc8ac6d115f6db50ecf3bf000a416c7de95fd5cdb7e10e303d614a" %}
 
 package:
   name: {{ name|lower }}
