@@ -1,6 +1,6 @@
 {% set name = "mplview" %}
-{% set version = "0.0.5" %}
-{% set sha256 = "391cc4bb05b1b534e9b252a47169bd9c4f91fc3273ec186e1fc448be12743b59" %}
+{% set version = "0.0.6" %}
+{% set sha256 = "9edddd9bfd6397fe39fd70c9f5e152354a2b04a0f253e869135eb009b09222fa" %}
 
 package:
   name: {{ name|lower }}
@@ -14,17 +14,17 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
     - numpy
-    - matplotlib
+    - matplotlib-base <3
     - npctypes
 
 test:
